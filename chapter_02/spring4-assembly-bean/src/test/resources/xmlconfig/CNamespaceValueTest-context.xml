@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="compactDisc" class="prosayj.thinking.spring4.assemblybean.xmlconfig.soundsystem.BlankDisc"
+          c:_0="Sgt. Pepper's Lonely Hearts Club Band"
+          c:_1="The Beatles"/>
+
+    <!--c:_0-ref="compactDisc"中的0可以省略，即：c:_-ref="compactDisc"-->
+    <bean id="cdPlayer" class="prosayj.thinking.spring4.assemblybean.xmlconfig.soundsystem.CDPlayer"
+          c:_0-ref="compactDisc"/>
+
+</beans>
